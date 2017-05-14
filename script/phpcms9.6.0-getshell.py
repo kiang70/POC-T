@@ -25,9 +25,10 @@ Reference:
 """
 
 import requests
+
 from plugin.util import randomString
 
-PUBLIC_URL = 'http://7xusrl.com1.z0.glb.clouddn.com/bypassdog.txt'
+PUBLIC_URL = 'http://118.180.7.28:8081/2.txt'
 TIMEOUT = 10
 
 

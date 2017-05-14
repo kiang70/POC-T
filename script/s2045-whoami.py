@@ -1,8 +1,9 @@
 #! -*- encoding:utf-8 -*-
 import urllib2
-import sys
+
 from poster.encode import multipart_encode
 from poster.streaminghttp import register_openers
+
 
 def poc(url):
 

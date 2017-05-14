@@ -3,13 +3,14 @@
 # project = https://github.com/Xyntax/POC-T
 # author = i@cdxy.me
 
-import random
 import hashlib
-import requests
-import socket
+import random
 import re
+import socket
 from string import ascii_lowercase, digits
 from urlparse import urlparse
+
+import requests
 
 
 def randomString(length=8):
@@ -147,7 +148,7 @@ def url2domain(url):
     eg:
     url为www.baidu.com/index.php?id=1返回http://www.baidu.com
     """
-    domain  = url.split('://')[-1].split('/')[0]
+    domain = url.split('://')[-1].split('/')[0]
     assert isinstance(domain, object)
-    domain =  'http://' + domain
+    domain = 'http://' + domain
     return domain

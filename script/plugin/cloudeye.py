@@ -21,9 +21,11 @@ Usage:
 """
 
 import random
-import requests
 import time
 from string import ascii_lowercase
+
+import requests
+
 from lib.utils.config import ConfigFileParser
 
 # load once for all thread

@@ -10,6 +10,7 @@ Upload a shell via /dapur/apps/app_theme/libs/save_file.php then check if it exi
 """
 
 import requests
+
 from plugin.util import randomMD5, randomString
 
 

@@ -22,8 +22,9 @@ these 2 methods should be called after [path-init-method] in lib.core.common
 """
 
 import random
-from lib.core.data import conf, th, paths, logger
+
 from lib.core.common import getFileItems
+from lib.core.data import conf, th, paths, logger
 
 
 def _init_UAlist(path):

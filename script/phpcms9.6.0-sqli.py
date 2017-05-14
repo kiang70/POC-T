@@ -15,9 +15,10 @@ Usage
 
 """
 
-import requests
 import re
 from urllib import quote
+
+import requests
 
 TIMEOUT = 3
 
