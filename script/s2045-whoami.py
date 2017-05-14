@@ -4,7 +4,7 @@ import sys
 from poster.encode import multipart_encode
 from poster.streaminghttp import register_openers
 
-def poc(url,content="echo nMask || whoami"):
+def poc(url):
 
     register_openers()
     datagen, header = multipart_encode({"image1": open("tmp.txt", "rb")})
